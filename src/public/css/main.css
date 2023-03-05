@@ -1,0 +1,113 @@
+:root {
+    --panel-width: 300px;
+}
+
+* {
+    color: #fff;
+    background-color: #222731;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+::selection {
+    color: #000;
+    background-color: #fff;
+}
+
+section {
+    display: inline-block;
+    position: relative;
+    left: calc(50% - var(--panel-width)/2 - 10px);
+    width: 50%;
+    margin-top: 2%;
+}
+
+.slot-container {
+    display: flex;
+}
+
+.slot {
+    flex-basis: calc(var(--panel-width)/3);
+    min-height: calc(var(--panel-width)/3);
+    max-width: calc(var(--panel-width)/3);
+    max-height: calc(var(--panel-width)/3);
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin: 3px;
+    border-radius: 2px;
+    background-color: rgb(230, 231, 237);
+    border: 1px solid #fff2;
+    transition: all 0.2s;
+}
+
+.slot:hover {
+    transform: scale(1.05, 1.05);
+    opacity: 0.9;
+}
+
+.slot img {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    padding: 10px;
+}
+
+.turn-container {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.title-container {
+    margin: auto;
+    background-color: #000;
+    width: calc(var(--panel-width) * 1.2);
+    background-color: #151921;
+    border: 1px solid #fff2;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.turn-title {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    background-color: transparent;
+}
+
+h2.turn-title {
+    font-weight: 100;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+#turn-selector {
+    width: 20px;
+    position: relative;
+    top: 3.5px;
+    background-color: transparent;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#reset {
+    font-size: 16px;
+    background-color: #26a;
+    padding: 10px;
+    border: 1px solid #fff2;
+    border-radius: 50px;
+    width: calc(var(--panel-width) / 1.5);
+    transition: all 0.2s;
+}
+
+#reset:hover {
+    background-color: #28f;
+    box-shadow: 0 0 35px 3px #48e5;
+}

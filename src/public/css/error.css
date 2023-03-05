@@ -1,0 +1,44 @@
+* {
+    color: #fff;
+    background-color: #222731;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #fff2;
+    background-color: #151921;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15% 0;
+}
+
+section * {
+    background-color: transparent;
+    margin: 10px 0; 
+}
+
+section p a {
+    color: #f00a;
+    font-size: 12px;
+}
+
+section h1 {
+    font-size: 20px;
+}
+
+section h2 {
+    font-size: 15px;
+}
