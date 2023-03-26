@@ -30,5 +30,5 @@ app.use("/", (err, req, res, next) => {
   res.render("error.ejs", { errStatus: err.status });
 });
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => console.log(`Server is listening at ${PORT}`));
